@@ -40,7 +40,7 @@ public class Main {
 		Funcionarios fun = lista.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
 		
 		if (fun  != null) {
-			System.out.print("Informe a porcetagem: ");
+			System.out.print("Informe a porcetagem: "); 
 			double p = in.nextDouble();
 			fun.aumento(p);
 
@@ -58,7 +58,8 @@ public class Main {
 			System.out.println("");
 
 		}
-
+		
+		in.close();
 	}
 
 }
