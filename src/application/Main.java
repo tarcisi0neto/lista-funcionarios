@@ -36,6 +36,7 @@ public class Main {
 		System.out.print("Informe o ID do funcionario para aumento: ");
 		int id = in.nextInt();
 
+		//Procura dentro da lista os ID de acordo com o digitado
 		Funcionarios fun = lista.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
 		
 		if (fun  != null) {
